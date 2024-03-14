@@ -73,7 +73,7 @@ public class ProjectOnStatement implements Developers {
         ResultSet resultSet = null;
         try{
             createTable();
-            loadFromTextToDB("/Users/decagon/Downloads/project-INGRYD/src/project1/project.txt");
+            loadFromTextToDB("src/project1/project.txt");
             Connection conn = connectToDatabase();
             Statement statement = conn.createStatement();
             String selectStatement = "SELECT * FROM developers";
